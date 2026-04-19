@@ -3,7 +3,7 @@
 ## Site institucional para Pet Shop
 
 ### Descrição
-Um site institucional para um pet shop, com informações sobre serviços, produtos, localização e formas de contato.
+Um site institucional para um pet shop, com informações sobre serviços, produtos, localização e formas de contato.git
 
 ### Problema a ser solucionado
 Muitos pet shops não possuem presença digital eficiente, dificultando que clientes encontrem informações básicas como serviços oferecidos, horários de funcionamento e formas de contato. Isso reduz a visibilidade do negócio e pode gerar perda de clientes.
