@@ -1,0 +1,55 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model PetShop {
+  idSite               Int       @id @default(autoincrement())
+  instagram            String
+  whatsapp             String
+  nome                  String
+  endereco             String
+  logoUrl              String
+  horarioFuncionamento String
+  tituloHome           String
+  textoQuemSomos       String
+  imagemQuemSomosUrl   String
+  email                String
+  telefone             String
+
+  servicos Servico[]
+  banners  Banner[]
+}
+
+model Servico {
+  idServico Int     @id @default(autoincrement())
+  nome      String
+  descricao String
+  imagemUrl String
+  destaque  Boolean
+
+  petShopId Int
+  petShop   PetShop @relation(fields: [petShopId], references: [idSite])
+}
+
+model Banner {
+  idBanner Int     @id @default(autoincrement())
+  fotoUrl  String
+  destaque Boolean
+
+  petShopId Int
+  petShop   PetShop @relation(fields: [petShopId], references: [idSite])
+}
+
+model UserAdmin {
+  idUserAdmin Int    @id @default(autoincrement())
+  nome        String
+  email       String @unique
+  senhaHash   String
+  fotoUrl     String
+}
+

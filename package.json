@@ -1,0 +1,29 @@
+{
+  "name": "tf-web-tema",
+  "version": "1.0.0",
+  "description": "Projeto de Trabalho Final - Web",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anacoliveira08/tf-web-tema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "dotenv": "^17.4.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "prisma": "^7.9.1",
+    "tsx": "^4.20.6"
+  }
+}
+
+
