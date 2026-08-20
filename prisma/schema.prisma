@@ -21,8 +21,6 @@ model PetShop {
   email                String
   telefone             String
 
-  servicos Servico[]
-  banners  Banner[]
 }
 
 model Servico {
@@ -32,8 +30,6 @@ model Servico {
   imagemUrl String
   destaque  Boolean
 
-  petShopId Int
-  petShop   PetShop @relation(fields: [petShopId], references: [idSite])
 }
 
 model Banner {
@@ -41,8 +37,6 @@ model Banner {
   fotoUrl  String
   destaque Boolean
 
-  petShopId Int
-  petShop   PetShop @relation(fields: [petShopId], references: [idSite])
 }
 
 model UserAdmin {
